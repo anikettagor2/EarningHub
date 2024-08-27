@@ -1,0 +1,600 @@
+@font-face {
+    font-family: font01;
+    src: url("./BodoniModaSC-Italic-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+    font-family: font02;
+    src: url("./NewAmsterdam-Regular.ttf");
+}
+@font-face {
+    font-family: font03;
+    src: url("./Jersey10-Regular.ttf");
+}
+@font-face {
+    font-family: font04;
+    src: url("./PTSans-Bold.ttf");
+}
+@font-face {
+    font-family: font05;
+    src: url("./PTSans-Regular.ttf");
+}
+@font-face {
+    font-family: font06;
+    src: url("./Oswald-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: font07;
+    src: url("./NewAmsterdam-Regular.ttf");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* cursor: none; */
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.nav{
+    height: 5vh;
+    width: 30%;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border: 3px solid;
+    border-radius: 5px;
+}
+.nav ul{
+    display: flex;
+}
+.nav li{
+
+    list-style-type: none;
+}
+.nav a{
+    margin: 10px;
+    text-decoration: none;
+    font-family: font02;
+    font-size: 2rem;
+    color: gray;
+    transition: all 0.2s ease-in-out;
+    cursor: none;
+}
+a{
+    color: gray;
+}
+.nav a:hover
+{
+    color: black;
+}
+.details{
+    height: 50vh;
+}
+.container02{
+}
+.section
+{
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+.wrapper01{
+  display: none;
+}
+/* Section 01 */
+
+
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+
+}
+.inner_con01{
+    height: 50vh;
+    width: 95vw;
+    border: 1px solid black;
+    display: flex;
+    margin-top: 1rem;
+    
+}
+.lf_co{
+    font-family: font05;
+    font-size: 7rem;
+
+}
+
+.lf_co
+{
+    width: 50%;
+    padding: 20px;
+    font-family: font07;
+}
+.lf_btm{
+    font-family: font07;
+    font-size: 1.5rem;
+    margin-top: 60px;
+}
+.btn01{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-family: font04;
+    background-color: gray;
+    border: 1px solid;
+    transition: all 0.1s ease-in-out;
+
+}
+.btn01:hover{
+    background-color: black;
+    color: white;
+}
+.btn01:active
+{
+    transform: scale(0.9);
+}
+
+.img_con{
+    height: 50vh;
+    width: 40vw;
+    /* border: 1px solid; */
+    margin-top: 3rem;
+    background: url("./img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+/* cursor */
+
+
+
+
+.cursor {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+    border-radius: 50%;
+    background: transparent;
+    pointer-events: none;
+    z-index: 111;
+    border: 1px solid #000;
+    transition: all 0.2s ease-out;
+    animation: moveCursor1 .5s infinite alternate;
+}
+
+.expand {
+    background: transparent;
+    animation: moveCursor2 .5s forwards;
+    border: 1px solid #000;
+}
+
+@keyframes moveCursor1 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.8);
+    }
+}
+
+@keyframes moveCursor2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* about us  */
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_con02{
+    height: 90vh;
+    width: 90vw;
+    /* border: 1px solid; */
+}
+.upp_head{
+    font-size: 10rem;
+    font-family: font02;
+}
+.wrapper {
+    height: 2vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 180px;
+
+  }
+  
+  .typing-demo {
+    width: 11ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: font02;
+    font-size: 2em;
+  }
+  
+  .com1{
+    height: 30px;
+    width: 40px;
+    background: orange;
+    border-radius: 10px;
+  }
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .bo_tm_d{
+    margin-top: 90px;
+    font-size: 50px;
+
+  }
+
+
+
+
+  /* section02 */
+
+  .three{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /* border: 1px solid ; */
+  }
+  
+  .bo_bar{
+    margin-top: 19rem;
+    height: 2px;
+    width: 100%;
+    border: 1px solid;
+  }
+  .c1
+  {
+    margin-top: 30px;
+    height: 90vh;
+    width: 116rem;
+    /* border: 1px solid; */
+    /* margin: 10px; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    height: 60vh;
+    width: 30vw;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+
+  }
+  .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    transform: scale(0.9);
+  }
+  .img_02
+  {
+    height: 40vh;
+    background: #000;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .co_info{
+    padding: 10px;
+    font-family: font04;
+    font-size: 2rem;
+  }
+  .img01{
+    background: url("./video_edit.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img02{
+    background: url("./Social-media-marketing-strategies-with-WP-Social-Ninja.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img03{
+    background: url("./ads.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+  }
+  .cors_info{
+    font-family: font06;
+  }
+  .co_info{
+    font-family: font07;
+  }
+
+  /* last */
+  .four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+  }
+
+  .inner_con03_{
+    height: 70vh;
+    width: 90vw;
+    border: 1px solid;
+    display: flex;
+
+    background-color: black;
+  }
+  .bx01{
+    width: 50%;
+    border: 1px solid;
+    height: 70vh;
+  }
+  .an{
+    font-size: 3rem;
+    font-family: font04;
+
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-brands{
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .links{
+    display: flex;
+  }
+  .left{
+    font-size: 2rem;
+    font-family: font07;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .up_ho{
+    margin-top: 30px;
+  }
+  .from_con{
+    display: flex;
+    flex-direction: column;
+  }
+  input
+  {
+    padding: 20px;
+    width: 20vw;
+    font-family: font04;
+    margin: 10px;
+  }
+  textarea
+  {
+    width: 20vw;
+    font-family: font04;
+    padding: 20px;
+    height: 20vh;
+  }
+  .btn_909090{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: font04;
+    transition: all 0.1s ease-in-out;
+  }
+  .btn_909090:active
+  {
+    transform: scale(0.9);
+  }
+
+
+
+
+
+
+  /* media query */
+
+
+  @media only screen and (max-width: 1024px) {
+    /* Styles for tablets and smaller devices */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for most mobile devices */
+
+    .nav{
+      display: none;
+    }
+    .menuItem {
+      display: block;
+      margin: 2rem 4rem;
+      font-size: 1.8rem;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .menuItem:hover {
+      text-decoration: underline;
+    }
+    
+    .hamburger {
+      position: fixed;
+      z-index: 100;
+      top: 1rem;
+      right: 1rem;
+      padding: 4px;
+      border: black solid 1px;
+      background: white;
+      cursor: pointer;
+    }
+    
+    .closeIcon {
+      display: none;
+    }
+    
+    .menu {
+      position: fixed;
+      transform: translateY(-100%);
+      transition: transform 0.2s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: black;
+      color: white;
+      list-style: none;
+      padding-top: 4rem;
+    }
+    
+    .showMenu {
+      transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Styles for tablets and smaller devices */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for most mobile devices */
+  
+  
+
+  
+  
+
+  
+  
+  
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for smaller smartphones */
+  .img_con{
+    display: none;
+  }
+  .inner_con01{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .lf_co{
+    font-size: 4rem;
+    width: 100%;
+  }
+  .wrapper{
+    font-size: 2.6rem;
+  }
+  .lan{
+    display: none;
+  }
+  .info_con{
+    display: none;
+  }
+  .typing-demo{
+    margin-top: -20px;
+  }
+  .up_con01
+  {
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+  }
+  .b1,.b2,.b3{
+    width: 100%;
+  }
+  .b4{
+    display: none;
+  }
+  .inner_con03_{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner_con03_
+  {
+    margin-top: 30rem;
+    flex-direction: column;
+  }
+  .bx01{
+  }
+  .right,.inner_con03,.four{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .left{
+    display: none;
+  }
+  .wrapper01{
+    display: flex;
+  }
+  .wrp01{
+    display: none;
+  }
+  .four{
+  }
+}
+
+
+
+@media only screen and (max-width: 320px) and (min-width=485px) {
+  /* Styles for very small screens or older smartphones */
+
+}
+
