@@ -44,6 +44,23 @@ body{
   display: flex;
   justify-content: center;
 }
+
+
+  .khatam{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cpyr{
+    border: 1px solid;
+    padding: 10px;
+    font-family: font05;
+    font-weight: 700;
+
+  }
+
 .nav{
     height: 5vh;
     width: 30%;
